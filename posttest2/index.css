@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("injustice.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 36px;
+    color: rgb(158, 163, 19);
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+    text-shadow: 0 2px 2px white;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    position: relative; 
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #61481C;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    top : 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    transform: translateY(-80%);
+}
+
+.content h1{
+    font-size: 60px;
+    margin-top: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:  0 0 20px yellow;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.about{
+    text-align: center;
+    margin: auto;
+    background-color: rgba(241, 184, 13, 0.252);
+    color: rgb(95, 62, 14);
+    display: inline-block;
+    width: 100%;
+    /* width: 100%; */
+}
+
+.about h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer{
+    text-align: left;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    background-color: #F1A661;
+    font-weight: bold;
+    color: rgb(95, 62, 14);
+    font-family: Arial, Helvetica, sans-serif;
+}
